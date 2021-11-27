@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.icon-bar-socialmedia {
+  position: fixed;
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 20px;
+  z-index: 999;
+}
+
+.icon-bar-socialmedia a {
+  display: block;
+  text-align: center;
+  padding: 2px;
+  /* transition: all 0.3s ease;
+  color: #fff;
+  font-size: 12px; */
+}
+
+.social-media-straight-line {
+  border: none;
+  border-left: 1px solid #00b9cf;
+  height: 50px;
+  width: 1px;
+}
+
+@media only screen and (min-width: 768px) {
+  .first-heading h1 {
+    font-size: 55px;
+  }
+}
+
+.vision {
+  background: url("images/BeFore-our-vision.jpg") no-repeat center;
+  height: 100vh;
+}
+
+.content h1 {
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .content {
+    max-width: 850px;
+  }
+  .content h1 {
+    font-size: 55px;
+  }
+}
+
+.know-more {
+  padding: 5px 35px;
+  color: #fff;
+  background-color: #333;
+  border: none;
+}
+
+.product_bg_img {
+  background: url("images/BeFore-home-product-iFeelWell.jpg") no-repeat center;
+  height: 90vh;
+}
+
+.footer-link li a,
+.footer-sub-link li a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-sub-link {
+  padding-left: 20px;
+}
+.blue-line {
+  border: 2px solid #00b9cf;
+}
+
+/************** PRODUCT PAGE ******************/
+
+.breadcrumb {
+  background-color: #fff;
+}
+
+.breadcrumb li a {
+  color: #c9bfce;
+}
+
+.breadcrumb li.active {
+  color: #6c757d;
+  font-weight: bold !important;
+}
+
+.product_btn {
+  background-color: #63bde1;
+  border: none;
+  font-size: 16px;
+  border-radius: 25px;
+  padding: 5px 15px;
+  color: #fff;
+}
+.privacy-policy {
+  font-size: 13px;
+}
+
+/****************** whatsapp icon ***************/
+#WAButton {
+  position: fixed;
+  bottom: 10px !important;
+  left: 10px !important;
+  width: 72px;
+}
+.floating-wpp-popup {
+  left: 10px !important;
+}
+@media only screen and (max-device-width: 767px) {
+  .text-right,
+  .assesment,
+  .training,
+  .nourishment-planning,
+  .chemical-analysis,
+  .outcome,
+  .breath-fuel {
+    text-align: center !important;
+  }
+  .desktop-blue-line {
+    display: none;
+  }
+  .footer-link {
+    padding-left: 0px;
+  }
+  .footer-sub-link {
+    padding-left: 5px;
+  }
+}
+
+@media only screen and (min-device-width: 767px) {
+  .mobile-blue-line {
+    display: none;
+  }
+}
