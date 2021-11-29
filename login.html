@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Before</title>
+    <link rel="icon" href="images/BeFore-Logo.png">
+    <!-- font -->
+    <link href="https://fonts.google.com/specimen/Lato?query=lat&sidebar.open&selection.family=Lato:wght@500"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Floating WhatsApp css-->
+    <link rel="stylesheet"
+        href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+    <!--Floating WhatsApp javascript-->
+    <script type="text/javascript"
+        src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+</head>
+
+<body>
+    
+    <div id="header"></div>
+
+    <div id="logreg-forms">
+        <form class="form-signin">
+            <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign in</h1>
+            <div class="social-login">
+                <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign in with Facebook</span> </button>
+                <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Sign in with Google+</span> </button>
+            </div>
+            <input type="email" id="inputEmail" class="form-control mb-2" placeholder="Email address" required="" autofocus="">
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+            
+            <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Sign in</button>
+            <a href="#" id="forgot_pswd">Forgot password?</a>
+            <hr>
+            <!-- <p>Don't have an account!</p>  -->
+            <button class="btn btn-primary btn-block" type="button" id="btn-signup"><i class="fas fa-user-plus"></i> Sign up New Account</button>
+            </form>
+
+            <form action="/reset/password/" class="form-reset">
+                <input type="email" id="resetEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+                <button class="btn btn-primary btn-block" type="submit">Reset Password</button>
+                <a href="#" id="cancel_reset"><i class="fas fa-angle-left"></i> Back</a>
+            </form>
+            
+            <form action="/signup/" class="form-signup">
+                <div class="social-login">
+                    <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign up with Facebook</span> </button>
+                </div>
+                <div class="social-login">
+                    <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Sign up with Google+</span> </button>
+                </div>
+                
+                
+                <input type="text" id="user-name" class="form-control" placeholder="Full name" required="" autofocus="">
+                <input type="email" id="user-email" class="form-control" placeholder="Email address" required autofocus="">
+                <input type="password" id="user-pass" class="form-control" placeholder="Password" required autofocus="">
+                <input type="password" id="user-repeatpass" class="form-control" placeholder="Repeat Password" required autofocus="">
+                <input type="number" id="user-age" class="form-control" placeholder="Age" required="" autofocus="">
+                <input type="number" id="user-no" class="form-control" placeholder="Mobile No." required="" autofocus="">
+                <input type="text" id="user-organisation" class="form-control" placeholder="Organisastion" required="" autofocus="">
+                <div class="form-group">
+                    <label for="user-category" class="pl-1">I am a</label>
+                    <select class="form-control" id="user-category">
+                        <option>Individuals</option>
+                        <option>Senior Citizens</option>
+                        <option>Athlete</option>
+                        <option>Player </option>
+                        <option>Professional Player</option>
+                        <option>Senior Executive</option>
+                        <option>Mid-Level Executive</option>
+                        <option>Executive</option>
+                        <option>Student</option>
+                        <option>Performing Artist</option>                        
+                      </select>
+                </div>
+                <div class="form-group">
+                    <label for="Services" class="pl-1">Services</label>
+                    <select class="form-control" id="Services">
+                        <option>Assessment</option>
+                        <option>Mental Training Programs</option>
+                        <option>Ifeelwell Sensor</option>
+                        <option>Ezun Membership</option>
+                    </select>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="service-type" id="in-person" value="option1" checked>
+                    <label class="form-check-label" for="in-person">
+                        In-Person          
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="service-type" id="online" value="option2">
+                    <label class="form-check-label" for="online">
+                        Online
+                    </label>
+                </div>
+                <textarea class="form-control mb-1" id="user-goal" rows="3" placeholder="Your Goal"></textarea>
+                <textarea class="form-control" id="user-remark" rows="3" placeholder="Remark"></textarea>
+
+                <button class="btn btn-primary btn-block" type="submit"><i class="fas fa-user-plus"></i> Sign Up</button>
+                <a href="#" id="cancel_signup"><i class="fas fa-angle-left"></i> Back</a>
+            </form>
+            <br>
+            
+    </div>
+   
+    
+
+    <script>
+        $('#header').load('header.html');
+    </script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            // document.getElementById("main").style.marginRight = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            document.getElementById("icon-bar-socialmedia").style.zIndex = "0";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            // document.getElementById("main").style.marginRight = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+    <script>
+        function toggleResetPswd(e){
+            e.preventDefault();
+            $('#logreg-forms .form-signin').toggle() // display:block or none
+            $('#logreg-forms .form-reset').toggle() // display:block or none
+        }
+
+        function toggleSignUp(e){
+            e.preventDefault();
+            $('#logreg-forms .form-signin').toggle(); // display:block or none
+            $('#logreg-forms .form-signup').toggle(); // display:block or none
+        }
+
+        $(()=>{
+            // Login Register Form
+            $('#logreg-forms #forgot_pswd').click(toggleResetPswd);
+            $('#logreg-forms #cancel_reset').click(toggleResetPswd);
+            $('#logreg-forms #btn-signup').click(toggleSignUp);
+            $('#logreg-forms #cancel_signup').click(toggleSignUp);
+        })
+    </script>
+
+
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
